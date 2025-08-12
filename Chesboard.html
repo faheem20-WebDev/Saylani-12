@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chess Board — Table with Colors</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td {
+        width: 20px;
+        height: 80px;
+      }
+      /* Alternate colors */
+      tr:nth-child(odd) td:nth-child(even),
+      tr:nth-child(even) td:nth-child(odd) {
+        background: black;
+        opacity: 0.3;
+      }
+      tr:nth-child(odd) td:nth-child(odd),
+      tr:nth-child(even) td:nth-child(even) {
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <!-- 8 rows -->
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+  </body>
+</html>
